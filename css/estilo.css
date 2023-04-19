@@ -1,4 +1,5 @@
 @import url("./cabecalho.css");
+@import url("./conteudo.css");
 
 
 * {
@@ -25,40 +26,6 @@ html{
 
 }
 
-.conteudo {
-
-    display: flex;
-
-    flex-wrap: wrap;
-
-    max-width: 800px;
-
-    margin: 0 auto;
-
-
-}
-
-
-.conteudo img {
-
-    display: block;
-
-    max-width: 100%;
-
-}
-
-.conteudo>div {
-
-    flex-grow: 1;
-    /*age no tamanho do crescimento*/
-
-    flex-shrink: 1;
-    /*age no tamanho de encolhimento*/
-
-    flex-basis: 300px;
-    /*base para manter esse tamanho pré definido, caso não consiga manter ele ira agir no crescimento e encolhimento*/
-    
-}
 
 
 /*Implementar Footer css*/
@@ -124,4 +91,22 @@ html{
 
 
 
+}
+
+/* vw = view widtch */
+/* vh = view hight */
+
+/* BREAKPOINT DO CABECALHO */
+@media(max-width:629px){
+    .cabecalho{
+        flex-direction: column;
+    }
+
+    .cabecalho nav{flex-wrap: nowrap;
+    }
+    .cabecalho a{
+        font-size: 3rem;
+        padding: 10% 0;
+    }
+    
 }
